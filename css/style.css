@@ -85,7 +85,18 @@ body {
   text-align: left;
   background-color: #fff;
 }
-
+.bg-white {
+  background-color: #ffffff;
+}
+.text-dark {
+  color: #000 !important;
+}
+.rounded-3 {
+  border-radius: 20px;
+}
+.fw-bold {
+  font-weight: 700 !important;
+}
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
