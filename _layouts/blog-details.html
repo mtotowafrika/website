@@ -1,0 +1,29 @@
+---
+layout: singleblog
+---
+
+<main class="p-0 push2 mt-5 text-left p-md-5 d-block">
+  <div class="container-fluid">
+    <p class="ib push-1-2 py-3">
+      <a href="/blog" class="backlink">← See other articles</a>
+    </p>
+    <h1 class="text-left">{{page.title}}</h1>
+    <p class="text-dark push2p text-left">
+      <i>
+        Written by
+        <strong class="fw-light text-danger"> {{page.author}}</strong>
+      </i>
+      <i class="ms-3">
+        On:
+        <strong class="fw-light text-danger"> {{page.date}}</strong>
+      </i>
+    </p>
+    <p><img src="{{ page.image }}" alt="" class="img-fluid" /></p>
+  </div>
+  <h1 class="py-3"></h1>
+  <div class="container-fluid article text-dark">{{content}}</div>
+
+  <p class="ib push-1-2 py-3">
+    <a href="/blog/" class="backlink">← See other articles</a>
+  </p>
+</main>

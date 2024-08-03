@@ -1,0 +1,5 @@
+<div class="blog-list row">
+  {% assign num_posts = 0 %} {% for post in site.posts %} {% if num_posts < 2 %}
+  {% include patterns/cards/post.html data=post %} {% assign num_posts =
+  num_posts | plus: 1 %} {% endif %} {% endfor %}
+</div>

@@ -1,0 +1,15 @@
+title: Mtoto W'Afrika
+description: "Mtoto W'Afrika - Raise a child, Raise a Leader, Reign in Christ !."
+baseurl: "" # Set to "/your-github-username.github.io/" if using GitHub Pages
+url: "https://mtotowafrikauganda.org/" # Your website's URL
+theme: null # No theme used, we'll use custom Bootstrap
+permalink: /:year/:month/:day/:title/ # Optional: Customize blog post permalink structure
+# _config.yml
+excerpt_separator: <!--more-->
+
+
+
+# Plugins (Optional)
+# plugins:
+#   - jekyll-seo-tag
+#   - jekyll-feed

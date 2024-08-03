@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body class="d-block">
+    {% include header.html %}
+
+    <section class="py-5 d-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="mt-4">{{ content }}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% include footer.html %}
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("qqJnbf812rTIUEALz");
+      })();
+    </script>
+  </body>
+</html>

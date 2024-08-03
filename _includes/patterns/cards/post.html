@@ -1,0 +1,15 @@
+<div class="col-md-6">
+  <a href="{{ post.url }}" class="hre">
+    <div class="blog-post m-1 p-3 my-5 bg-light shadow-2">
+      <img src="{{ post.image }}" class="img-fluid" alt="Blog Image" />
+      <h2 class="fw-bold h4 text-dark pt-3">
+        <a href="{{ post.url }}" class="text-dark">{{ post.title }}</a>
+      </h2>
+      <small class="post-date">{{ post.date | date: "%B %d, %Y" }}</small>
+      <p>{{ post.excerpt }}</p>
+      <a href="{{ post.url }}" class="btn btn-lg btn-dark">
+        Read more <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+  </a>
+</div>
