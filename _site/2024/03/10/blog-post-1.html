@@ -55,6 +55,20 @@
     <link rel="stylesheet" href="/css/flaticon.css" />
     <link rel="stylesheet" href="/css/icomoon.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CF18Q5ZX5E"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CF18Q5ZX5E");
+    </script>
   </head>
 </html>
 
@@ -81,9 +95,10 @@
         <li class="nav-item active">
           <a href="/" class="nav-link">Home</a>
         </li>
-        <!--    <li class="nav-item">
-          <a href="about.html" class="nav-link">About</a>
+        <li class="nav-item">
+          <a href="/about" class="nav-link">About</a>
         </li>
+        <!-- 
         <li class="nav-item">
           <a href="causes.html" class="nav-link">Causes</a>
         </li>
