@@ -122,6 +122,10 @@
         <li class="nav-item">
           <a href="/donate" class="nav-link">Donate</a>
         </li>
+
+        <li class="nav-item">
+          <a onclick="contact()" class="nav-link">Contact</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -173,7 +177,7 @@
         class="col-md-5 d-flex justify-content-center counter-wrap ftco-animate">
         <div class="block-18 color-1 align-items-stretch">
           <div class="text">
-            <span>Served Over</span>
+            <span class="fw-bold">Served Over</span>
             <strong class="number" data-number="2000">0</strong>
             <span class="text-light">Children in 2 countries in Africa</span>
           </div>
@@ -183,7 +187,7 @@
         class="col-md d-flex justify-content-center counter-wrap ftco-animate">
         <div class="block-18 color-2 align-items-stretch">
           <div class="text">
-            <h3 class="mb-4">Donate Money</h3>
+            <h3 class="mb-4 fw-bold">Donate Money</h3>
             <p>Your kind giving and donations help us do more together</p>
             <p>
               <a href="/donate" class="btn btn-white px-3 py-2 mt-2"
@@ -197,7 +201,7 @@
         class="col-md d-flex justify-content-center counter-wrap ftco-animate">
         <div class="block-18 color-1 align-items-stretch">
           <div class="text">
-            <h3 class="mb-4">Become a Volunteer</h3>
+            <h3 class="mb-4 fw-bold">Become a Volunteer</h3>
             <p class="text-light">
               Every willing heart counts. Come give a hand as you volunteer with
               us. You are welcome
@@ -229,7 +233,7 @@
         <div class="col-md-4  d-flex ftco-animate">
           <div class=" services p-3 m-1 shadow rouded-3 bg-white  py-4 d-block">
             
-            <h2 class="text-danger display-1"> <i class="bi bi-pencil"></i></h2>
+            <img src="images/edu.jpg" class="img-fluid mb-3" alt="" srcset="">
             
             <div class=" pl-4">
               <h3 class="h1 fw-bold">EDUCATION</h3>
@@ -247,7 +251,7 @@
         <div class="col-md-4  d-flex ftco-animate">
           <div class=" services p-3 m-1 shadow rouded-3 bg-white  py-4 d-block">
             
-            <h2 class="text-danger display-1"> <i class="bi bi-tornado"></i></h2>
+            <img src="images/skills.jpg" class="img-fluid mb-3" alt="" srcset="">
             
             <div class=" pl-4">
               <h3 class="h1 fw-bold">SKILLS & TALENTS</h3>
@@ -266,7 +270,7 @@
         <div class="col-md-4  d-flex ftco-animate">
           <div class=" services p-3 m-1 shadow rouded-3 bg-white  py-4 d-block">
             
-            <h2 class="text-danger display-1"> <i class="bi bi-prescription2"></i></h2>
+            <img src="images/water.jpg" class="img-fluid mb-3" alt="" srcset="">
             
             <div class=" pl-4">
               <h3 class="h1 fw-bold">COMMUNITY HEALTH CARE</h3>
@@ -859,97 +863,16 @@
     <div class="row d-md-flex">
       <div class="col-md-6 d-flex ftco-animate"></div>
       <div class="col-md-6 volunteer pl-md-5 ftco-animate">
-        <h3 class="mb-3">Become a Volunteer</h3>
-        <form action="#" class="volunter-form">
-          <div class="form-group">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Your Name"
-              required />
-          </div>
-          <div class="form-group">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Your Email"
-              required />
-          </div>
-          <div class="form-group">
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="3"
-              class="form-control"
-              placeholder="Message"
-              required></textarea>
-          </div>
-          <div class="form-group">
-            <input
-              type="submit"
-              value="Send Message"
-              class="btn btn-white py-3 px-5" />
-          </div>
-        </form>
+        <h3 class="mb-3">Get in touch</h3>
+        <p>
+          <button onclick="contact()" class="btn btn-white px-3 py-2 mt-2">
+            Contact us
+          </button>
+        </p>
       </div>
     </div>
   </div>
 </section>
-<!-- /Contact Section -->
-<script
-  type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script type="text/javascript">
-  (function () {
-    emailjs.init("Fw1cokoUW3A8YRfRO");
-  })();
-
-  document
-    .getElementById("contact-form")
-    .addEventListener("submit", function (event) {
-      event.preventDefault();
-
-      // Display loading message
-      document.querySelector(".loading").style.display = "block";
-      document.querySelector(".error-message").style.display = "none";
-      document.querySelector(".sent-message").style.display = "none";
-
-      // Check if the checkbox is checked
-      var notARobot = document.getElementById("not-a-robot").checked;
-      if (!notARobot) {
-        document.querySelector(".loading").style.display = "none";
-        document.querySelector(".error-message").style.display = "block";
-        document.querySelector(".error-message").innerHTML =
-          "Please confirm you are not a robot.";
-        return;
-      }
-
-      // Get the form data
-      var templateParams = {
-        name: document.getElementsByName("name")[0].value,
-        email: document.getElementsByName("email")[0].value,
-        phone: document.getElementsByName("phone")[0].value,
-        subject: document.getElementsByName("subject")[0].value,
-        message: document.getElementsByName("message")[0].value,
-      };
-
-      // Send the email
-      emailjs.send("service_u0ofp09", "template_87xc88z", templateParams).then(
-        function (response) {
-          document.querySelector(".loading").style.display = "none";
-          document.querySelector(".sent-message").style.display = "block";
-        },
-        function (error) {
-          document.querySelector(".loading").style.display = "none";
-          document.querySelector(".error-message").style.display = "block";
-          document.querySelector(".error-message").innerHTML =
-            "Failed to send email. Please try again later. Error: " +
-            JSON.stringify(error);
-        }
-      );
-    });
-</script>
 
 </div>
 
