@@ -1,5 +1,5 @@
 Swal.fire({
-  title: " Donate to keep a girl in school",
+  title: " Donate a pad, Keep a girl in school",
   html: `
       <h1 class="text-center display-1 "> 
       <img src="images/girl.jpg" class="img-fluid" />
