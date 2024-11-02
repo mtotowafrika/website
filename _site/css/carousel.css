@@ -1,0 +1,51 @@
+.hero-slider .hero-wrap {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Hide the dots */
+.owl-dots {
+  display: none;
+}
+
+/* Style navigation buttons */
+.owl-nav button {
+  position: absolute;
+  bottom: 20px; /* Positioning at the bottom */
+  background-color: rgba(0, 0, 0, 0.8) !important; /* High-contrast color */
+  border: none;
+  border-radius: 50%; /* Circular shape */
+  width: 50px; /* Size for better visibility */
+  height: 50px;
+  opacity: 0.8; /* Fixed opacity */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /* Icon color */
+  font-size: 24px; /* Icon size */
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Soft shadow for visibility */
+}
+
+/* Add Unicode arrows for previous and next */
+.owl-nav button.owl-prev::before {
+  content: "◄"; /* Left arrow */
+}
+
+.owl-nav button.owl-next::before {
+  content: "►"; /* Right arrow */
+}
+
+/* Positioning for Prev and Next buttons */
+.owl-nav button.owl-prev {
+  bottom: 30%; /* Adjust this value for placement */
+}
+
+.owl-nav button.owl-next {
+  bottom: 30%; /* Adjust this value for placement */
+}
+
+/* Background color for title background */
+.hometitlebg {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
