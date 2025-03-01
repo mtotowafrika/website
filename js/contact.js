@@ -6,19 +6,19 @@ function contact() {
           
           <form id="contact-form">
             <div class="form-group">
-              <input type="text" id="name" name="name" placeholder="Name" class="form-control" required>
+              <input type="text" id="name" name="name" placeholder="Name" class="form-control mb-2" required>
             </div>
             <div class="form-group">
-              <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone" required>
+              <input type="tel" id="phone" name="phone" class="form-control mb-2" placeholder="Phone" required>
             </div>
             <div class="form-group">
-              <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+              <input type="email" id="email" name="email" class="form-control mb-2" placeholder="Email" required>
             </div>
             <div class="form-group">
-              <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+              <input type="text" id="subject" name="subject" class="form-control mb-2" placeholder="Subject" required>
             </div>
             <div class="form-group">
-              <textarea id="message" name="message" placeholder="Message" class="form-control" rows="4" required></textarea>
+              <textarea id="message" name="message" placeholder="Message" class="form-control mb-2" rows="4" required></textarea>
             </div>
             <button type="submit" class="btn btn-dark mt-3">Submit</button>
           </form>

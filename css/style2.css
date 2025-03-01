@@ -1,0 +1,110 @@
+body {
+    font-family: 'Grandstander', cursive;
+    background-color: #e1e1e1;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bubblegum Sans', cursive;
+    color: #E63946;
+}
+
+* { margin:0; padding:0; }
+#content { margin: 50px; } 
+a { text-decoration: none; }  
+ 
+.expandable {
+  background: #fff;
+  overflow: hidden;
+
+  transition: all .5s ease-in-out;
+  line-height: 0;
+  padding: 0 1em;
+  color: transparent;
+}
+ 
+.expandable:target {
+  line-height: 1.5;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: black;
+}
+.title {
+    font-size: 700%; /* Adjust the size as needed */
+    font-weight: bold; /* Optional: Make the text bold */
+    background-image: linear-gradient(to right, #000000, #f61818) !important; /* Two colors for the gradient */
+    -webkit-background-clip: text !important; /* Clip the background to the text */
+    color: transparent !important; /* Make the text color transparent so the gradient is visible */
+}
+.text-white{
+  color: #ffffff !important;
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 400%; /* Adjust the size for small screens */
+    }
+}
+
+@keyframes typing {
+  0%, 100% { content: "LOVE"; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "LOVE";
+  animation: typing 5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+  border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+  border-right: 0;
+}
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+}
+
+.logo-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px; /* Adjust width as needed */
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+  .ftco-footer-widget{
+    padding: 20px;
+  }
+  .ftco-footer-widget h2{
+    font-size: 300%; /* Adjust the size as needed */
+    font-weight: bold; /* Optional: Make the text bold */
+    background-image: linear-gradient(to right, #06ade5, #f61818) !important; /* Two colors for the gradient */
+    -webkit-background-clip: text !important; /* Clip the background to the text */
+    color: transparent !important; /* Make the text color transparent so the gradient is visible */
+  }
+  .text{
+    color: #000000 !important;
+  }
+  .no-gutters{
+    height: 300px;
+  }

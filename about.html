@@ -5,11 +5,8 @@ titleAfter: ...Mtoto W'Afrika
 priority: 1.0
 ---
 
-<div
-  class="hero-wrap"
-  style="background-image: url('images/bg11.jpg')"
-  data-stellar-background-ratio="0.5">
-  <div class="overlay"></div>
+<header class="hero bg-white   pb-5 d-none d-lg-block " style="background-image: url('images/bg.jpg'); position: relative;">
+  <div style="background-color: rgba(0, 0, 0, 0.1); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
   <div class="container">
     <div
       class="row no-gutters slider-text align-items-center justify-content-center"
@@ -23,34 +20,21 @@ priority: 1.0
           <span class="mr-2"><a href="/">Home</a></span> <span>About</span>
         </p>
         <h1
-          class="mb-3 bread"
+          class="mb-3 bread text-center title"
           data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
           About Us
         </h1>
       </div>
     </div>
   </div>
-</div>
+</header>
 
-<section class="ftco-section">
+<section class="ftco-section p-3">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 ftco-animate">
-        <div class="col-md-8 mx-auto">
-          <img
-            src="images/samuel.jpg"
-            class="img-fluid text-center"
-            alt=""
-            srcset="" />
-        </div>
-
-        <div class="col-md-8 mx-auto">
-          <h2 class="text-center">Director & Founder</h2>
-          <p class="text-center">Samuel Sekibejja</p>
-        </div>
-      </div>
+      
       <div class="col-md-6 pl-md-5 ftco-animate">
-        <h1 class="mb-4 display-4 fw-bold">Who we are</h1>
+        <h2 class="my-4 display-4 title fw-bold">Who we are</h2>
         <p>
           Mtoto W’afrika Child Care Ministries was founded in 2013 and fully
           incorporated with an NGO status in 2014. Our path towards
@@ -73,6 +57,20 @@ priority: 1.0
           continue shading a ray of hope to such people and this is a vision
           that we continue to pursue for life.
         </p>
+      </div>
+      <div class="col-md-6 ftco-animate">
+        <div class="col-md-8 mx-auto">
+          <img
+            src="images/directors.png"
+            class="img-fluid text-center p-3"
+            alt=""
+            srcset="" />
+        </div>
+
+        <div class="col-md-8 mx-auto">
+          <h2 class="text-center">Director & Founder</h2>
+          <p class="text-center">Samuel & Joan Sekibejja</p>
+        </div>
       </div>
     </div>
     <div class="row">
@@ -128,6 +126,9 @@ priority: 1.0
   </div>
 </section>
 
-{% include us.html %}
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8 row">{% include us.html %}</div>
+</div>
 <script src="js/contact.js"></script>
 <div class="mb-5"></div>
