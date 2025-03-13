@@ -83,7 +83,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #fff !important;
 }
 p {
   font-size: 16px !important;
@@ -10151,7 +10151,7 @@ h5,
   bottom: 0;
   content: "";
   opacity: 0.9;
-  background: #f86f2d;
+  background: #f7f7f7 !important;
 }
 .ftco-section-3 .img {
   width: 100%;
@@ -10354,7 +10354,7 @@ h5,
   display: block;
   width: 100%;
   position: relative;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 1);
   margin-bottom: 1px;
   padding: 30px 40px 30px 50px;
 }
@@ -10368,7 +10368,7 @@ h5,
   bottom: 0;
   content: "";
   width: 360%;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 1);
 }
 .services-wrap h2 {
   color: #f86f2d;
