@@ -1,6 +1,7 @@
 body {
-  font-family: "Grandstander", cursive;
+  font-family: "Happy Monkey";
   background-color: #eeeeee;
+  font-weight: bold;
 }
 h1,
 h2,
@@ -8,8 +9,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Bubblegum Sans", cursive;
-  color: #e63946;
+  font-family: "Barrio", sans-serif;
+}
+.programtitle {
+  padding: 10px;
+  background-color: #c3ff99;
 }
 
 * {
@@ -150,4 +154,14 @@ a {
   border-bottom: 2px #a81717 solid !important;
   padding-bottom: 10px;
   margin-bottom: 20px;
+}
+
+.programdiv {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+.programdiv:hover {
+  padding: 25px;
 }
