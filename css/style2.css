@@ -165,3 +165,8 @@ a {
 .programdiv:hover {
   padding: 25px;
 }
+
+.new-title-class {
+  color: #ffffff !important;
+  background-color: #810808 !important;
+}
