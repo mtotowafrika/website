@@ -23,6 +23,9 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Barrio&display=swap"
       rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
 
     <link
       rel="stylesheet"
@@ -385,7 +388,7 @@
     <div class="row mb-5">
       <div class="col-md-4">
         <div class="ftco-footer-widget mb-4">
-          <h4 class="ftco-heading-2">About Us</h4>
+          <h3 class="ftco-heading-2">About Us</h3>
           <p>
             Mtoto W’afrika Child Care Ministries was founded in 2013. We are
             hinged on the willingness and hope to spread the unconditional love
@@ -394,14 +397,26 @@
           </p>
           <ul
             class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-            <li class="ftco-animate d-none">
+            <li class="footer-animate d-none">
               <a href="#"><span class="icon-twitter"></span></a>
             </li>
-            <li class="ftco-animate">
-              <a href="https://www.facebook.com/profile.php?id=61563417212029"
-                ><span class="icon-facebook"></span
-              ></a>
+            <li
+              class="footer-animate clickable-li"
+              data-href="https://www.facebook.com/profile.php?id=61563417212029">
+              <a href="https://www.facebook.com/profile.php?id=61563417212029">
+                <span class="icon-facebook me-3"></span>Mtoto W'Afrika
+              </a>
             </li>
+
+            <script>
+              document.querySelectorAll(".clickable-li").forEach((li) => {
+                li.addEventListener("click", () => {
+                  const url = li.getAttribute("data-href");
+                  if (url) window.location.href = url;
+                });
+              });
+            </script>
+
             <li class="ftco-animate d-none">
               <a href="#"><span class="icon-instagram"></span></a>
             </li>
