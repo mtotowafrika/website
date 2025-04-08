@@ -3,6 +3,9 @@ body {
   background-color: #eeeeee;
   font-weight: bold !important;
 }
+p {
+  text-align: justify !important;
+}
 h1,
 h2,
 h3 {
@@ -191,7 +194,14 @@ a {
   text-decoration: none;
   color: inherit; /* Optional: keeps the text color consistent on hover */
 }
-
+.facebook {
+  background-color: #066fc6 !important;
+  padding: 10px;
+  color: #ffffff;
+}
+a {
+  text-decoration: none !important;
+}
 @media (max-width: 600px) {
   .footer-animate {
     font-size: 20px !important;
@@ -200,7 +210,7 @@ a {
     padding: 20px;
   }
   .title {
-    font-size: 430% !important; /* Adjust the size for small screens */
+    font-size: 350% !important; /* Adjust the size for small screens */
     color: #000000 !important; /* Change text color for small screens */
   }
   .slogan {
