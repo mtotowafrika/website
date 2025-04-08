@@ -1,7 +1,7 @@
 body {
   font-family: "Happy Monkey" !important;
   background-color: #eeeeee;
-  font-weight: bold;
+  font-weight: bold !important;
 }
 h1,
 h2,
