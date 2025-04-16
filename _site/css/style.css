@@ -11966,6 +11966,7 @@ textarea.form-control {
   padding: 10px 20px;
   margin-bottom: 10px;
   background-color: #ffd9b3;
+  font-weight: 900 !important;
 }
 .programbody {
   color: #000000 !important;

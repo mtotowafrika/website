@@ -1,36 +1,37 @@
 body {
-  font-family: "Happy Monkey" !important;
+  /* font-family: "Happy Monkey" !important; */
+  font-family: "Inter", sans-serif;
   background-color: #eeeeee;
-  font-weight: bold !important;
+  font-weight: 500 !important;
+  color: #000000 !important;
+  font-size: 16px !important;
 }
 p {
   text-align: justify !important;
+  font-family: "Inter", sans-serif;
+  font-size: 16px !important;
+}
+ul {
+  font-family: "Inter", sans-serif;
+  font-size: 16px !important;
 }
 h1,
 h2,
 h3 {
-  /*font-family: "Barrio", sans-serif;*/
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-}
-
-h1,
-h2,
-h3 {
-  /*font-family: "Barrio", sans-serif;*/
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
+  font-family: "Playfair Display", serif !important;
+  font-weight: 900;
 }
 
 h4,
 h5,
 h6 {
-  /*font-family: "Barrio", sans-serif;*/
-  font-family: "Inter", sans-serif;
+  font-family: "Playfair Display", serif !important;
+  font-weight: 700;
 }
+
 .programtitle {
   padding: 10px;
-  background-color: #c3ff99;
+  background-color: #fff599;
 }
 
 * {
@@ -160,7 +161,6 @@ a {
 
 .programdiv {
   padding: 20px;
-  border-radius: 20px;
   background-color: #ffffff;
   margin-bottom: 20px;
 }
@@ -171,6 +171,8 @@ a {
 .new-title-class {
   color: #ffffff !important;
   background-color: #810808 !important;
+  font-size: 30px;
+  padding: 3px 10px;
 }
 .ftco-heading-2 {
   font-weight: 700 !important;
@@ -234,5 +236,11 @@ a {
   margin-bottom: 20px !important;
 }
 .us {
-  border: 1px solid #9a0000 !important;
+}
+
+.mtotoredbg {
+  background-color: #9a0000;
+}
+.mtotored {
+  color: #9a0000;
 }
