@@ -1,31 +1,31 @@
 body {
   /* font-family: "Happy Monkey" !important; */
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #eeeeee;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
   color: #000000 !important;
   font-size: 16px !important;
 }
 p {
   text-align: justify !important;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px !important;
 }
 ul {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   font-size: 16px !important;
 }
 h1,
 h2,
 h3 {
-  font-family: "Playfair Display", serif !important;
-  font-weight: 900;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 800;
 }
 
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", serif !important;
+  font-family: "Poppins", sans-serif !important;
   font-weight: 700;
 }
 
