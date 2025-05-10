@@ -11961,13 +11961,7 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
-.programtitle {
-  font-size: 28px;
-  padding: 10px 20px;
-  margin-bottom: 10px;
-  background-color: #ffd9b3;
-  font-weight: 900 !important;
-}
+
 .programbody {
   color: #000000 !important;
 }

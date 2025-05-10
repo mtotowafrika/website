@@ -7,15 +7,41 @@ priority: 1.0
 
 <div>
   <!-- Large screens header -->
-  <header class="hero bg-black    d-none d-lg-block " style="background-image: url('images/bg.png'); background-size: cover; background-position: center; height: 100vh; position: relative;">
-    <div style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.0)); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></div><div class="container h-100 d-flex flex-column justify-content-center">
-      <h1 class="text-center fw-bold display-1 text-white" style="position: relative; z-index: 2;">MTOTO W'AFRIKA
-      </h1>
-      <p class="slogan h3 text-center p-3 bg-white" style="position: relative; z-index: 2;">Raise a Child | Raise a Leader | Reign in Christ</p>
-      <div class="text-center" style="position: relative; z-index: 2;">
-        <a href="/donate" class="btn btn-light btn-lg mt-3">Donate Now  <i class="bi bi-send-arrow-up-fill"></i> </a>
+  <header class="hero bg-black" style="position: relative; height: 100vh;">
+    <div id="coverCarousel" class="carousel slide" data-bs-ride="carousel" style="height: 100%;">
+      <div class="carousel-inner" style="height: 100%;">
+        <div class="carousel-item active" style="height: 100%; position: relative;">
+          <img src="images/books.png" class="d-block w-100" alt="Slide 1" style="object-fit: cover; height: 100%;">
+          <div class="carousel-caption d-none d-md-block" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+            <h1 class="text-white typing-effect" data-text="Empowering the Next Generation">Empowering the Next Generation</h1>
+          </div>
+        </div>
+        <div class="carousel-item" style="height: 100%; position: relative;">
+          <img src="images/build.png" class="d-block w-100" alt="Slide 2" style="object-fit: cover; height: 100%;">
+          <div class="carousel-caption d-none d-md-block" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+            <h1 class="text-white typing-effect" data-text="Transforming Communities">Transforming Communities</h1>
+          </div>
+        </div>
+        <div class="carousel-item" style="height: 100%; position: relative;">
+          <img src="images/school.png" class="d-block w-100" alt="Slide 3" style="object-fit: cover; height: 100%;">
+          <div class="carousel-caption d-none d-md-block" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+            <h1 class="text-white typing-effect" data-text="Building a Brighter Future">Building a Brighter Future</h1>
+          </div>
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#coverCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#coverCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+    <div style="position: absolute; background-color: rgb(255, 255, 255,0.3); padding: 20px; bottom: 100px; right: 20px; z-index: 2; text-align: right;">
+      <h1 class="mb-3 bread title" style="color: rgb(255, 255, 255) !important; font-weight: bold; font-size: 3rem;">MTOTO W'AFRIKA</h1>
+      <p class="slogan text-center" style=" background-color:rgb(171, 0, 0) ; color: rgb(255, 255, 255); font-size: 1.5rem;">Raise a Child | Raise a Leader | Reign in Christ</p>
+        </div>
   </header>
 
   <!-- Small screens header -->
@@ -310,3 +336,39 @@ priority: 1.0
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 <!---------------<script src="js/donate.js"></script>-------->
+
+<script>
+  const carousel = document.getElementById('coverCarousel');
+  const typingEffects = document.querySelectorAll('.typing-effect');
+
+  const typeText = (element) => {
+    const text = element.getAttribute('data-text');
+    let index = 0;
+    const type = () => {
+      if (index < text.length) {
+        element.textContent += text.charAt(index);
+        index++;
+        setTimeout(type, 100);
+      }
+    };
+    element.textContent = '';
+    type();
+  };
+
+  carousel.addEventListener('slid.bs.carousel', (event) => {
+    const activeSlide = event.relatedTarget;
+    const typingElement = activeSlide.querySelector('.typing-effect');
+    if (typingElement) {
+      typeText(typingElement);
+    }
+  });
+
+  // Trigger typing effect for the first slide on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    const activeSlide = document.querySelector('.carousel-item.active');
+    const typingElement = activeSlide.querySelector('.typing-effect');
+    if (typingElement) {
+      typeText(typingElement);
+    }
+  });
+</script>
