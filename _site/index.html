@@ -91,7 +91,7 @@
   id="ftco-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <img src="images/mtotologo.png" style="width: 50px" alt="" srcset="" />
+      <img src="images/mtotologo.png" style="width: 100px" alt="" srcset="" />
       Mtoto W'Afrika</a
     >
     <button
@@ -115,11 +115,14 @@
         <li class="nav-item">
           <a href="/career" class="nav-link">Career</a>
         </li>
-        <li class="nav-item"><a href="/donate" class="nav-link">Donate</a></li>
+
         <li class="nav-item">
           <a onclick="contact()" class="nav-link" style="cursor: pointer"
             >Contact</a
           >
+        </li>
+        <li class="nav-item">
+          <a href="/donate" class="nav-link donatebtn">Donate</a>
         </li>
       </ul>
     </div>
@@ -265,9 +268,14 @@
             <div class="services p-3 m-1 rouded-3 py-4 d-block h-100" style="cursor:pointer;">
               <img src="images/book.png" class="img-fluid" alt="" srcset="">
               <div class="pl-4">
-                <h3 class="h3 fw-bold p-1 mtotoredbg text-white p-md-3">EDUCATION</h3>
+                <h3 class="h3 fw-bold p-1 mtotoredbg text-white p-md-3">
+                  EDUCATION
+              <span class="ms-5">
+                <i class="bi bi-arrow-right-circle" title="More details"></i>
+              </span>
+                </h3>
                 <ul style="color: #000;">
-                  <li>Child sponsorship  - We pay school fees for children, and we give them scholastic support.</li>
+                  <li>Child sponsorship  - We pay school fees for children and we give them scholastic support.</li>
                   <li>Teachers’ Empowerment Program: We organize teachers’ training workshops for teachers in school.</li>
                 </ul>
               </div>
@@ -543,7 +551,7 @@
     
   </main>
 
-  <footer class="ftco-footer ftco-section bg-dark text-white pt-5 mt-3">
+  <footer class="ftco-footer ftco-section bg-dark text-white pt-5 mt-3 mb-0">
   <div class="container">
     <div class="row mb-5">
       <!-- About Us -->
@@ -583,11 +591,15 @@
       <!-- Site Links -->
       <div class="col-md-4">
         <div class="ftco-footer-widget mb-4">
-          <h4 class="ftco-heading-2 text-danger">Site Links</h4>
+          <h3 class="ftco-heading-2 text-danger small-left">Site Links</h3>
           <ul class="list-unstyled">
-            <li><a href="/" class="py-2 d-block text-white">Home</a></li>
             <li>
-              <a href="/donate" class="py-2 d-block text-white">Donate</a>
+              <a href="/" class="py-2 d-block text-white small-left">Home</a>
+            </li>
+            <li>
+              <a href="/donate" class="py-2 d-block text-white small-left"
+                >Donate</a
+              >
             </li>
           </ul>
         </div>
@@ -596,7 +608,7 @@
       <!-- Contact Info -->
       <div class="col-md-4">
         <div class="ftco-footer-widget mb-4">
-          <h4 class="ftco-heading-2 text-danger">Have a Question?</h4>
+          <h3 class="ftco-heading-2 text-danger">Have a Question?</h3>
           <ul class="list-unstyled">
             <li class="mb-2">
               <a href="#" class="text-white">
@@ -629,15 +641,15 @@
     </div>
 
     <!-- Footer Bottom -->
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <p class="mb-0 text-white-50 p-5">
-          &copy; <span id="currentYear"></span> All rights reserved |
-          <strong class="text-danger"
-            >Mtoto W'Afrika Child Care Ministries</strong
-          >
-        </p>
-      </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <p class="mb-0 text-white-50 p-5 small-left">
+        &copy; <span id="currentYear"></span> All rights reserved |
+        <strong class="text-danger"
+          >Mtoto W'Afrika Child Care Ministries</strong
+        >
+      </p>
     </div>
   </div>
 </footer>

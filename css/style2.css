@@ -244,3 +244,36 @@ a {
 .mtotored {
   color: #9a0000;
 }
+.small-left {
+  text-align: left !important;
+}
+
+@media (min-width: 768px) {
+  .small-left {
+    text-align: center !important;
+  }
+}
+.nav-link {
+  color: #000000 !important;
+  font-weight: 500 !important;
+}
+.donatebtn {
+  background-color: #ec4343 !important;
+  border-radius: 5px !important;
+  color: #ffffff !important;
+  padding: 5px 10px !important;
+}
+
+.nav-link:hover {
+  background-color: #ece143 !important;
+  color: #000000 !important;
+
+  padding: 5px 10px !important;
+}
+.becomebtn {
+  background: #66c835 !important;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+}

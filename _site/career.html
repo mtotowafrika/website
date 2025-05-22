@@ -91,7 +91,7 @@
   id="ftco-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <img src="images/mtotologo.png" style="width: 50px" alt="" srcset="" />
+      <img src="images/mtotologo.png" style="width: 100px" alt="" srcset="" />
       Mtoto W'Afrika</a
     >
     <button
@@ -115,11 +115,14 @@
         <li class="nav-item">
           <a href="/career" class="nav-link">Career</a>
         </li>
-        <li class="nav-item"><a href="/donate" class="nav-link">Donate</a></li>
+
         <li class="nav-item">
           <a onclick="contact()" class="nav-link" style="cursor: pointer"
             >Contact</a
           >
+        </li>
+        <li class="nav-item">
+          <a href="/donate" class="nav-link donatebtn">Donate</a>
         </li>
       </ul>
     </div>
@@ -185,7 +188,7 @@
           Whether you are passionate about teaching, healthcare, farming, or community outreach, there is a place for you in our team. We welcome individuals from all walks of life who are willing to share their talents and make a positive impact.
         </p>
         <p>
-          Download the volunteer application form below, fill it out, and send it back to us to get started on this rewarding journey.
+          Download the volunteer application form below, print and fill it out, then scan and send it back to us to get started on this rewarding journey.
         </p>
         <a href="docs/volunteer.pdf" class="btn btn-dark">Download Form  <span class="bi me-1 bi-download"></span> </a>
         <p>
@@ -207,7 +210,7 @@
     
   </main>
 
-  <footer class="ftco-footer ftco-section bg-dark text-white pt-5 mt-3">
+  <footer class="ftco-footer ftco-section bg-dark text-white pt-5 mt-3 mb-0">
   <div class="container">
     <div class="row mb-5">
       <!-- About Us -->
@@ -247,11 +250,15 @@
       <!-- Site Links -->
       <div class="col-md-4">
         <div class="ftco-footer-widget mb-4">
-          <h4 class="ftco-heading-2 text-danger">Site Links</h4>
+          <h3 class="ftco-heading-2 text-danger small-left">Site Links</h3>
           <ul class="list-unstyled">
-            <li><a href="/" class="py-2 d-block text-white">Home</a></li>
             <li>
-              <a href="/donate" class="py-2 d-block text-white">Donate</a>
+              <a href="/" class="py-2 d-block text-white small-left">Home</a>
+            </li>
+            <li>
+              <a href="/donate" class="py-2 d-block text-white small-left"
+                >Donate</a
+              >
             </li>
           </ul>
         </div>
@@ -260,7 +267,7 @@
       <!-- Contact Info -->
       <div class="col-md-4">
         <div class="ftco-footer-widget mb-4">
-          <h4 class="ftco-heading-2 text-danger">Have a Question?</h4>
+          <h3 class="ftco-heading-2 text-danger">Have a Question?</h3>
           <ul class="list-unstyled">
             <li class="mb-2">
               <a href="#" class="text-white">
@@ -293,15 +300,15 @@
     </div>
 
     <!-- Footer Bottom -->
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <p class="mb-0 text-white-50 p-5">
-          &copy; <span id="currentYear"></span> All rights reserved |
-          <strong class="text-danger"
-            >Mtoto W'Afrika Child Care Ministries</strong
-          >
-        </p>
-      </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <p class="mb-0 text-white-50 p-5 small-left">
+        &copy; <span id="currentYear"></span> All rights reserved |
+        <strong class="text-danger"
+          >Mtoto W'Afrika Child Care Ministries</strong
+        >
+      </p>
     </div>
   </div>
 </footer>
